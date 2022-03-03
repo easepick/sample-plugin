@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "dist",
+    "module": "esnext",
+    "target": "esnext",
+    "moduleResolution": "node",
+    "emitDeclarationOnly": true,
+    "composite": true,
+  },
+  "exclude": [
+    "node_modules",
+    "**/node_modules/*",
+    "__tests__"
+  ]
+}
