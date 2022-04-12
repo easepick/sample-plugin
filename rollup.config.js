@@ -1,4 +1,3 @@
-
 import typescript from '@rollup/plugin-typescript';
 import define from 'rollup-plugin-define';
 import resolve from '@rollup/plugin-node-resolve';
@@ -20,15 +19,6 @@ const output = () => {
       name: 'easepick',
       sourcemap: false,
       extend: true,
-      banner: `/**
-* @license
-* Package: ${pkg.name}
-* Version: ${pkg.version}
-* https://easepick.com/
-* Copyright ${(new Date()).getFullYear()} Rinat G.
-* 
-* Licensed under the terms of GNU General Public License Version 2 or later. (http://www.gnu.org/licenses/gpl.html)
-*/`,
       globals(id) {
         if (/^@easepick\//.test(id)) {
           return 'easepick';

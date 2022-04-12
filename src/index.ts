@@ -39,7 +39,7 @@ export class SamplePlugin extends BasePlugin implements IPlugin {
 
   /**
    * Function `view` event
-   * Adds `tabIndex` to the picker elements
+   * Changes `backgroundColor` and `color` of today
    * 
    * @param event 
    */
